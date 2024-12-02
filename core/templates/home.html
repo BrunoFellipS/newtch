@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N Possibilidades para você</title>
     <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         /* Reset básico */
         * {
@@ -22,11 +23,10 @@
 
         /* Cabeçalho */
         header {
-            background: #003B73;
-            color: white;
+            background: #E0F7FA; /* Azul escuro */
+            color: #003B73;
             padding: 20px 0;
             text-align: center;
-            animation: fadeIn 2s ease-in-out;
         }
 
         header h1 {
@@ -42,15 +42,6 @@
         header img {
             width: 80px;
             margin-bottom: 20px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-            box-shadow: 10px 5px 5px black;
-        }
-
-        /* Animação de fadeIn */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
         }
 
         /* Seção principal */
@@ -59,10 +50,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 80px;
-            background-color: #E0F7FA;
-            transition: transform 0.3s ease;
+            background-color: #bbdee9;
         }
-
         .hero:hover {
             transform: scale(1.05);
         }
@@ -75,7 +64,6 @@
             font-size: 2.5rem;
             color: #003B73;
             margin-bottom: 20px;
-            animation: slideIn 1s ease-out;
         }
 
         .hero p {
@@ -86,8 +74,8 @@
 
         .hero button {
             padding: 10px 20px;
-            background: #0099FF;
-            color: white;
+            background: #FFC107; /* Amarelo vibrante */
+            color: #003B73; /* Azul escuro */
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -96,7 +84,7 @@
         }
 
         .hero button:hover {
-            background: #007ACC;
+            background: #FFA000; /* Amarelo escuro */
         }
 
         .hero img {
@@ -107,9 +95,12 @@
         /* Seção Sobre */
         .about {
             padding: 50px;
-            background: #fff;
+            background: #FFFFFF; /* Branco para contraste */
             text-align: center;
-            animation: slideIn 1.5s ease-out;
+        }
+
+        .about:hover {
+            transform: scale(1.05);
         }
 
         .about h3 {
@@ -127,14 +118,18 @@
 
         /* Seção Casos de Clientes */
         .clients {
-            background: #f9f9f9;
+            background: #F9F9F9;
             padding: 50px;
             text-align: center;
         }
 
+        .clients:hover {
+            transform: scale(1.05);
+        }
+
         .clients h3 {
             font-size: 2rem;
-            color: #003B73;
+            color: #FFC107; /* Amarelo vibrante */
             margin-bottom: 20px;
         }
 
@@ -148,9 +143,9 @@
         .client {
             width: 200px;
             height: 150px;
-            background: #fff;
+            background: #FFFFFF; /* Branco */
+            border: 2px solid #FFC107; /* Amarelo vibrante */
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -165,8 +160,12 @@
         /* Seção Projetos */
         .projects {
             padding: 50px;
-            background: #E0F7FA;
+            background: #E0F7FA; /* Azul claro */
             text-align: center;
+        }
+
+        .projects:hover {
+            transform: scale(1.05);
         }
 
         .projects h3 {
@@ -184,9 +183,9 @@
         .project {
             width: 280px;
             height: 180px;
-            background: #fff;
+            background: #FFFFFF; /* Branco */
+            border: 2px solid #003B73; /* Azul escuro */
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             margin: 15px;
             padding: 15px;
             display: flex;
@@ -201,7 +200,7 @@
 
         /* Rodapé */
         footer {
-            background: #003B73;
+            background: #003B73; /* Azul escuro */
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -212,18 +211,12 @@
         }
 
         footer a {
-            color: #0099FF;
+            color: #FFC107; /* Amarelo vibrante */
             text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
-        }
-
-        /* Animações adicionais */
-        @keyframes slideIn {
-            0% { opacity: 0; transform: translateY(50px); }
-            100% { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
